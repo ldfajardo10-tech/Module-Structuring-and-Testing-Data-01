@@ -38,7 +38,7 @@ function assertEquals(actualOutput, targetOutput) {
 // Given an angle in degrees,
 // When the function getAngleType is called with this angle,
 // Then it should:
-
+module.exports = getAngleType;
 // Case 1: Identify Right Angles:
 // When the angle is exactly 90 degrees,
 // Then the function should return "Right angle"
