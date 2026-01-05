@@ -18,6 +18,6 @@
 
 const sentence = "hello\tworld";
 
-const result = sentence.replace("\t", "_").toUpperCase();
+const result = sentence.replaceAll("\t", "_").toUpperCase();
 
 console.log(result);
