@@ -1,12 +1,12 @@
 const penceString = "399p";
 
-const penceStringWithoutTrailingP = penceString.substring(
+const penceStringWithoutTrailingP = penceString.substring( 
   0,
   penceString.length - 1
 );
 
-const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0");
-const pounds = paddedPenceNumberString.substring(
+const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0"); 
+const pounds = paddedPenceNumberString.substring(  
   0,
   paddedPenceNumberString.length - 2
 );
@@ -25,3 +25,7 @@ console.log(`£${pounds}.${pence}`);
 
 // To begin, we can start with
 // 1. const penceString = "399p": initialises a string variable with the value "399p"
+// 2. Its creating a new string without the "p"
+// 3. adding 0 to 3, so 0399
+// 4. create a string with the first two digits
+// 5. create a string with the last two digits 
