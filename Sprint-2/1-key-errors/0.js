@@ -5,9 +5,11 @@
 // interpret the error message and figure out why an error is occurring
 
 function capitalise(str) {
-  let str = `${str[0].toUpperCase()}${str.slice(1)}`;
+   str = `${str[0].toUpperCase()}${str.slice(1)}`;
   return str;
 }
-
+console.log(capitalise("hello world"));
 // =============> write your explanation here
 // =============> write your new code here
+
+// the function was declare twice 
