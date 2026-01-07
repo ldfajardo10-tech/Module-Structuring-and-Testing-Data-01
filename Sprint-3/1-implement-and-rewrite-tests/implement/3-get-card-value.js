@@ -16,7 +16,7 @@ function getCardValue(card) {
     return 11;
   } else if (rank === "J" || rank === "Q" || rank === "K") {
     return 10;
-  } else if (rank >= 2 && rank <= 9) {
+  } else if (rank >= 2 && rank <= 10) {
     return numRank;
   } else {
     throw new Error("Invalid Card Rank");
@@ -86,5 +86,5 @@ assertEquals(aceOfDiamonds, 11);
 // Given a card with an invalid rank (neither a number nor a recognized face card),
 // When the function is called with such a card,
 // Then it should throw an error indicating "Invalid card rank."
-const invalidCard1 = getCardValue("10Q");
+const invalidCard1 = getCardValue("11Q");
 assertThrows(() => getCardValue("1A♠"),"Invalid Card Rank");
