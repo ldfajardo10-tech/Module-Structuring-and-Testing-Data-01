@@ -10,11 +10,9 @@
 function isProperFraction(numerator, denominator) {
   if (numerator < denominator) {
     return true;
-  }
-  if (numerator > denominator) {
+  } else if (numerator === denominator) {
     return false;
-  }
-  if (numerator === denominator) {
+  } else {
     return false;
   }
 }
