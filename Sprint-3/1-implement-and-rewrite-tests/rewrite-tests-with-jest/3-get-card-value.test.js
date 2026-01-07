@@ -8,7 +8,7 @@ test("should return 11 for Aces", () => {
 });
 
 // Case 2: Handle Number Cards (2-10):
-test("should return a rank between (2-9) for any card !== A, J, Q, K", () => {
+test("should return a rank between (2-10) for any card !== A, J, Q, K", () => {
   const fiveOfHearts = getCardValue("5♥");
   expect(fiveOfHearts).toEqual(5);
 });
